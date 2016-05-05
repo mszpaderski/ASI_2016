@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa:</strong>
+  <%= @user.name %>
+</p>
+
+<%= link_to 'Edycja', edit_user_path(@user) %> |
+<%= link_to 'Powrót', users_path %>

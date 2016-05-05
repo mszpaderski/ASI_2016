@@ -1,0 +1,42 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table{
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table tr td{
+    padding: 10px;
+}
+
+thead{
+    text-align: left;
+    background: #003333;
+    color: white;
+}
+
+thead th{
+    padding: 10px;
+    font-size: 70%;
+}
+
+.list_line_even{
+    background: #99ffff;
+}
+
+.list_line_odd{
+    background: #ccffcc;
+}
+
+#title{
+    width:15%;
+}
+
+#lvl{
+    width: 5%;
+}
+#post{
+    width: 70%;
+}

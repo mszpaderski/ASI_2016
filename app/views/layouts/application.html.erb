@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="all">
+    <nav id="horzNav">
+        
+        <p> &#9679;&#9679;
+        <%= link_to 'Spis', {:controller => 'articles', :action => 'index'} %> &#9679;&#9679;
+        <%= link_to 'O autorze', {:controller => 'pages', :action => 'about'} %> &#9679;&#9679;
+        <%= link_to 'Uzytkownicy', {:controller => 'users', :action => 'index'} %> &#9679;&#9679;
+        <%= link_to 'Wyloguj', {:controller => 'sessions', :action => 'destroy'} %> &#9679;&#9679;
+        </p>
+
+    
+    </nav>
+<div id='all_page'>
+    
+    <%= yield %>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Artykuły</h1>
+</br>
+<table>
+  <thead>
+    <tr>
+      <th id='title'>Tytuł</th>
+        <th id='lvl'>Proponowany</br> poziom postaci</th>
+      <th id='post'>Pomysł na fabułę</th>
+     <th><%= link_to 'Nowy artykuł', new_article_path %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+        <td><%= article.title %></td>
+        <td><%= article.players_lvl %></td>
+        <td><%= article.post %></td>
+        <td><%= link_to 'Pokaż', article %></td>
+        <td><%= link_to 'Edytuj', edit_article_path(article) %></td>
+          <td><%= link_to 'Usuń', article, method: :delete, data: { confirm: 'Czy aby napewno?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

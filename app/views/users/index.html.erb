@@ -1,0 +1,30 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<h1>Użytkownicy</h1></br>
+
+<table>
+  <thead>
+    <tr>
+      <th id="name_u">Nazwa</th>
+        <th><%= link_to 'Nowy użytkownik', new_user_path %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+        <td><%= user.name %></td>
+        <td><%= link_to 'Pokaż', user %></td>
+          <td><%= link_to 'Edytuj', edit_user_path(user) %></td>
+        <td><%= link_to 'Usuń', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

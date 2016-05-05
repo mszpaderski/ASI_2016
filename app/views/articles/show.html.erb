@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tytuł:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Proponowany poziom postaci:</strong>
+  <%= @article.players_lvl %>
+</p>
+
+<p>
+  <strong>Pomysł na fabułę:</strong>
+  <%= @article.post %>
+</p>
+
+
+
+<%= link_to 'Edytuj', edit_article_path(@article) %> |
+<%= link_to 'Powrót', articles_path %>
