@@ -77,6 +77,5 @@ config.public_file_server.enabled = true
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-    
-    config.web_console.development_only = false
+
 end
