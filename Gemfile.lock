@@ -186,7 +186,8 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
 
-
+PLATFORMS
+  x86-mingw32
 
 DEPENDENCIES
   bcrypt
