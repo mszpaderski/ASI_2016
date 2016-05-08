@@ -8,7 +8,7 @@
  
 | Wersja Ruby   | Wersja Rails   | Baza danych |
 |------------|---------|-------------|
-|    2.2.4p230   | 5.0.0.beta1.1  | MySQL  |
+|    2.3.0   | 5.0.0.beta1.1  | MySQL  |
 
 - Opis aplikacji: Baza danych pomysłów na fabułę do sesji gier RPG</br>
 Aby sprawić że MySQL będzie działać na Heroku wystarczy dodać bazę (w moim przypadku) ClearDB MySQL, na przykład z lini poleceń.</br>
