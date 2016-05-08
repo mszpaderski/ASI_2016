@@ -3,8 +3,8 @@
 ### Marcin Szpaderski
 
 <b>1. Zaliczenie:</b>
- - [x] [Pomysły na fabułę](https://github.com/jgodziuk/ASI/tree/master/notebooks)
- - [x] [link do wdrożonej na zewnętrznym serwerze aplikacji](https://notebooks-jgodziuk.c9users.io/)
+ - [x] [Pomysły na fabułę](https://github.com/mszpaderski/ASI_2016.git)
+ - [x] [link do wdrożonej na zewnętrznym serwerze aplikacji](https://immense-hollows-73463.herokuapp.com/)
  
 | Wersja Ruby   | Wersja Rails   | Baza danych |
 |------------|---------|-------------|
