@@ -14,7 +14,7 @@
   </thead>
 
   <tbody>
-    <% @articles.each do |article| %>
+      <% @articles.reverse_each do |article| %>
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
         <td><%= article.title %></td>
         <td><%= article.players_lvl %></td>
