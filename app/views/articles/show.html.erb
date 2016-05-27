@@ -19,7 +19,7 @@
 <% @article.comments.each do |comment| %>
 <p>
     <strong>Użytkownik:</strong>
-    <%= comment.commenter %>
+    <%= comment.user %>
 </p>
 <p>
     <strong>Komentarz:</strong>
@@ -31,7 +31,6 @@
 
 <%= form_for([@article, @article.comments.build]) do |f| %>
 <p>
-    <%= f.label :body %><br />
     <%= f.text_area :body %>
 </p>
 <p>
