@@ -15,11 +15,16 @@
   <%= @article.post %>
 </p>
 
+<p>
+  <strong>Pomysł na fabułę:</strong>
+    <%= @article.user_id %>
+</p>
+
 <h2>Komentarze:</h2>
 <% @article.comments.each do |comment| %>
 <p>
     <strong>Użytkownik:</strong>
-    <%= comment.user_id %>
+
 </p>
 <p>
     <strong>Komentarz:</strong>
