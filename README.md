@@ -25,11 +25,13 @@ Ale to chyba na wszystkich bazach trzeba zrobić tak samo.</br>
 
 
 <b>2. Egzamin:</b>
- - [ ] [nazwa aplikacji](egzamin)
- - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji](/)
+ - [x] [Blog o pomysłach na fabułę](https://github.com/mszpaderski/ASI_2016/tree/egzamin)
+ - [x] [link do wdrożonej na zewnętrznym serwerze aplikacji](http://rpg-session-ideas.herokuapp.com/)
 
 | Wersja Ruby   | Wersja Rails   | Baza danych |
 |------------|---------|-------------|
-| - | -  | -  |
+|    2.3.0   | 5.0.0.beta1.1  | MySQL  |
 
-- Opis aplikacji:
+- Opis aplikacji: Rozszerzenie projektu na zaliczenie, do każdego pomysłu na sesję, użytkownicy mogą teraz dodawać komentarze
+
+Egzamin znajduje się w gałęzi o nazwie Egzamin.
