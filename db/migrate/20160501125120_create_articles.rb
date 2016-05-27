@@ -4,7 +4,7 @@ class CreateArticles < ActiveRecord::Migration[5.0]
       t.string :title
       t.integer :players_lvl
       t.text :post
-      t.references : :user, index: true, foreign_key: true
+        t.integer :user_id
 
       t.timestamps
     end
