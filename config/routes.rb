@@ -9,8 +9,11 @@ Rails.application.routes.draw do
 
   get 'pages/about'
 
-  resources :articles
-  resources :users
+    resources :articles do
+        resources :comments
+    end
+    
+    resources :users
     
     get 'admin' => 'admin#index'
     controller :sessions do
