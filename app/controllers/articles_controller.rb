@@ -25,7 +25,8 @@ class ArticlesController < ApplicationController
   # POST /articles.json
   def create
     @article = Article.new(article_params)
-
+      @article.username = session[:user_name]
+      
     respond_to do |format|
       if @article.save
           format.html { redirect_to @article, notice: 'Artykuł został pomyślnie utworzony.' }
@@ -69,6 +70,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-        params.require(:article).permit(:title, :players_lvl, :post, session[:user_id])
+        params.require(:article).permit(:title, :players_lvl, :post)
     end
 end
