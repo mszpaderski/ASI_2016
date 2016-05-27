@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  commenter: MyString
   body: MyText
   article: 
+  user: 
 
 two:
-  commenter: MyString
   body: MyText
   article: 
+  user: 
